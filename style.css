@@ -1,0 +1,26 @@
+#html {
+    font-size: 24px;
+}
+
+.textlol {
+    font-family: 'Rampart One', cursive;
+    text-align: center;
+}
+#button-grid {
+    display: flex;
+    margin: 0 auto;
+    width: 20%;
+    justify-content: center;
+}
+.btntext {
+    font-family: 'Klee One', cursive;
+}
+#container {
+    display: grid;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+    margin: 0 auto;
+    border: 10px solid black;
+    width: 700px;
+    height: 500px;
+}
