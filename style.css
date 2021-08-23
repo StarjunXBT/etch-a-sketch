@@ -1,7 +1,6 @@
 #html {
-    font-size: 24px;
+    font-size: 28px;
 }
-
 .textlol {
     font-family: 'Rampart One', cursive;
     text-align: center;
@@ -9,11 +8,13 @@
 #button-grid {
     display: flex;
     margin: 0 auto;
-    width: 20%;
+    width: 100%;
     justify-content: center;
 }
 .btntext {
     font-family: 'Klee One', cursive;
+    padding: 2%;
+    margin: 1%;
 }
 #container {
     display: grid;
@@ -21,6 +22,18 @@
     grid-template-columns: repeat(16, 1fr);
     margin: 0 auto;
     border: 10px solid black;
-    width: 700px;
-    height: 500px;
+    width: 30vw;
+    height: 50vh;
+}
+.cell {
+    background-color: black;
+}
+@media screen and (max-width: 758px) {
+    html {
+        font-size: 16px;
+    }
+    #container {
+        width: 80vw;
+        height: 50vh;
+    }
 }

@@ -1,4 +1,5 @@
 const container = document.getElementById("container");
+let rows = container.childNodes
 
 function defaultGrid() {
     createRows(16);
@@ -8,7 +9,6 @@ function createRows(rowsNum) {
     for (r = 0; r < 16; r++) {
         let row = document.createElement('div');
         row.style.border = "1px solid black";
-        row.classList.add('rows');
         container.appendChild(row);
     }
 }
@@ -19,3 +19,10 @@ function createColumns(columnsNum) {
 }
 
 defaultGrid();
+
+console.log(container.childNodes)
+rows.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+        item.classList.add('cell')
+    })
+  })
