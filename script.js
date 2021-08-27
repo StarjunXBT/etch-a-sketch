@@ -1,13 +1,20 @@
 const container = document.getElementById("container");
 let rows = container.childNodes
 eraseBtn = document.querySelector('#eraseBtn')
-
+twentyBtn = document.querySelector('#twentyBtn')
 defaultGrid();
-eraseCells();
 
 function eraseCells() {
     container.replaceChildren();
     createGrid(16*16);
+}
+function twentyThree() {
+    container.replaceChildren();
+    createGrid(32*32);
+}
+function fortySix() {
+    container.replaceChildren();
+    createGrid(64*64);
 }
 function defaultGrid() {
     createGrid(16*16);
@@ -30,3 +37,4 @@ function showColor() {
 }
 
 eraseBtn.onclick = eraseCells;
+twentyBtn.onclick = twentyThree;
