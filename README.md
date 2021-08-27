@@ -1,2 +1,2 @@
 # etch-a-sketch
-FCC Challenge
+Odin Challenge
