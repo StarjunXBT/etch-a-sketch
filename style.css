@@ -17,13 +17,18 @@
     margin: 1%;
 }
 #container {
+    margin: 0 auto;
+    border: 10px solid black;
+    width: 30vw;
+    height: 50vh;
+    background-color: white;
+}
+#small {
     display: grid;
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: repeat(16, 1fr);
     margin: 0 auto;
     border: 10px solid black;
-    width: 30vw;
-    height: 50vh;
 }
 .cell {
     background-color: black;
